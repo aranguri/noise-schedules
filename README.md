@@ -14,9 +14,9 @@ In the `celeba_task` folder, we provide the code to generate samples using the V
 
 We then see that the VE schedule outperforms the VP in the high-level aspects while this is reversed (when using a small number of steps) for the quality of the details of the generated image (see more details in the paper.)
 
-## a
-In the scForked and modified Song et al implementation of score-based diffusion models to show that the variance exploding (VE) schedule outperforms the variance preserving (VP) one in the quality of the details of the generated image while this is reversed for the high-level aspects. This required modifying the noise schedules and implementing a discriminator to test the quality of the generated images.
+## Initial experiments on CIFAR dataset
+In the `cifar` folder, we forked and modified Song et al 2020 [2] implementation of score-based diffusion models for the CIFAR dataset for some quick experiments on different noise schedules (since CIFAR is much lighter than the CelebA dataset) in the beginning of the project. Note, however, that the final paper does not contain experiments with CIFAR.
 
 ## References
-[1]
-[2]
+[1] Aranguri, S., Biroli, G., Mezard, M., & Vanden-Eijnden, E. (2025) Optimizing Noise Schedules of Generative Models in High Dimensionss. arXiv preprint arXiv:2501.00988.
+[2] Song, Y., Sohl-Dickstein, J., Kingma, D. P., Kumar, A., Ermon, S., & Poole, B. (2020). Score-based generative modeling through stochastic differential equations. arXiv preprint arXiv:2011.13456.
