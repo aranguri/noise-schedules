@@ -12,7 +12,7 @@ In the `celeba_task` folder, we provide the code to generate samples using the V
   <img src="celeba_task/low.png" alt="Active" width="45%">
 </p>
 
-We then see that the VP schedule outperforms the VE in the high-level aspects while this is reversed (when using a small number of steps) for the quality of the details of the generated image.
+We then see that the VE schedule outperforms the VP in the high-level aspects while this is reversed (when using a small number of steps) for the quality of the details of the generated image.
 
 ## a
 In the scForked and modified Song et al implementation of score-based diffusion models to show that the variance exploding (VE) schedule outperforms the variance preserving (VP) one in the quality of the details of the generated image while this is reversed for the high-level aspects. This required modifying the noise schedules and implementing a discriminator to test the quality of the generated images.
